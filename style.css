@@ -1,0 +1,405 @@
+ *{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+ }
+
+ body {
+    background-image: url(./imagen/bartenders-pouring.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 100% ;
+    padding: 0;
+    margin: 0;
+    display: grid;
+    min-height: auto;
+    min-width: auto;
+ }
+
+ main{
+    background-color: aliceblue;
+    padding: 1rem;
+    margin: 1rem;
+    border: 0.1rem solid black;
+    border-radius: 4px;
+    
+ }
+ 
+ 
+ 
+
+ #headerindex{
+    background-color: aliceblue;
+    max-height: 100px;
+    margin: 1rem ;
+    padding:  1rem ;
+    border: 0.1rem solid black ;
+    border-radius: 5px; 
+    margin-top: 2rem;
+}
+
+h1 {
+    text-align: center ;
+    text-decoration: undrline;
+    color: teal;
+    font-family: 'League Gothic', sans-serif;
+}
+
+.lista {
+    text-align: center;
+    flex-direction: row;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    list-style: none;
+}
+
+.tarjetacontenedora {
+    width: 100%;
+    display: flex;
+    flex-direction:row ;
+    flex-wrap: nowrap;
+    max-width: 1600px;
+    margin: auto;
+}
+
+.titulotarjeta{
+    width: 100%;
+    max-width: 1080px;
+    margin: auto;
+    padding: 20px;
+    margin-top: 20px;
+    text-align: center ;
+    color: aqua;
+}
+
+.tarjeta {
+    width: 30%;
+    margin: 20px;
+    border-radius: 7px;
+    overflow: hidden;
+    background-color: azure;
+    box-shadow: 0px 1px 11px rgba(0,0,0,0.5);
+}
+
+.tarjeta:hover{
+    box-shadow: 6px 6px 30px rgba(0,0,0,0.5);
+}
+
+.tarjeta img{
+    width: 100%;
+    height: 50%;
+}
+
+.contenidotarjeta{
+    padding: 15px;
+    text-align: center;
+}
+
+.tarjeta .contenidotarjeta{
+    padding: 15px;
+    text-align: center;
+}
+
+.tarjeta .contenidotarjeta h2{
+    margin-bottom: 5px;
+    color: darkslategrey;
+}
+
+.tarjeta .contenidotarjeta p{
+    line-height: 1.9;
+    color: darkorange;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.contenidotarjeta a{
+    display: inline-block;
+    padding: 10px;
+    margin-top: 10px;
+    text-decoration: none;
+    color: blueviolet;
+    border: 1px solid black;
+    border-radius: 5px;
+    transition: all 40ms ease;
+    margin-bottom: 4px;
+}
+
+.contenidotarjeta a :hover{
+    background-color: antiquewhite;
+    color: bisque;
+}
+
+/* pagina de clasicos  */
+.paginaclasica{
+    display: flex;
+    flex-wrap: wrap;
+    min-width: 250px;
+    min-height: 250px;
+}
+
+#gridclasicos {
+    display: grid;
+    grid-column: auto auto auto; 
+    grid-template-rows: auto auto auto;
+    gap: 20px;   
+}
+
+#gridclasico .tarjetacontenedora {
+    display: grid;
+    grid-column: 1fr;
+    grid-template-rows: auto auto auto;
+    gap: 20px;
+
+}
+
+.clasicos{
+        background-color: aliceblue;
+        padding: 1rem;
+        margin: 1rem;
+        border: 0.1rem solid black;
+        border-radius: 4px;
+}
+ .clasicos p{
+    font-size: larger;
+ }
+
+ /* modernos */
+ .gridtotal{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4 / 1fr) ;
+    grid-template-rows: repeat(4 / 1fr);
+    grid-template-areas: 
+    footer 
+    main main main main
+    footer footer footer footer;
+ }
+
+
+ /* footer */
+
+.ulti{
+    background-color: aliceblue;
+    padding: 1rem;
+    margin: 1rem ;
+    border: 0.1rem solid black;
+    border-radius: 4px;
+}
+
+.ulti p {
+    font-family: 'League Gothic', sans-serif;
+    font-size: medium;
+}
+
+/* pagina de modernos  */
+#headerindexmod{
+    background-color: aliceblue;
+    max-height: 100px;
+    margin: 1rem ;
+    padding:  6rem ;
+    border: 0.1rem solid black ;
+    border-radius: 5px; 
+    margin-top: 2rem;
+}
+
+
+#headerindexmod .tit .parrafoo{
+    text-align: start;
+    block-size: 100%;
+    
+}
+#headerindexmod .tit{
+    margin-top: 11px;
+    margin-bottom: 1px;
+}
+
+
+
+
+/* .cursotitulo{
+    position: relative;
+} */
+
+
+/* .caja {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    margin: 1rem;
+    padding: 2rem;
+    background-color: beige;
+    border: 0.1rem solid black;
+    margin-top: 0rem;
+    height: 80%;
+}
+
+ .box1 {
+    display:grid ;
+    width: 150px;
+    height: 150px;
+    border: 2px solid black;
+    background-color: aqua;
+    margin: 16px;
+    gap: 14px;
+    padding: 1rem;
+    margin: 1rem;
+    text-align: center;
+    line-height: 150px;
+    float: left;
+} 
+
+.box2{
+    display:grid ;
+    grid-template-columns: repeat(2 , 1fr);
+    width: 150px;
+    height: 150px;
+    border: 2px solid black;
+    background-color: aqua;
+    margin: 16px;
+    gap: 14px;
+    padding: 1rem;
+    margin: 1rem;
+    text-align: justify;
+}
+
+probando imagen con grid 
+ .box2 img{
+    display: grid;
+    width: 150px;
+    height: 150px;
+    margin: 16px;
+    gap: 14px;
+    margin: 1rem;
+    text-align: justify;
+}
+
+
+
+.box3{
+    display:grid ;
+    width: 150px;
+    height: 150px;
+    border: 2px solid black;
+    background-color: aqua;
+    margin: 16px;
+    gap: 14px;
+    padding: 1rem;
+    margin: 1rem;
+    text-align: justify;
+}
+
+.box4 {
+    display:grid ;
+    width: 150px;
+    height: 150px;
+    border: 2px solid black;
+    background-color: aqua;
+    margin: 16px;
+    gap: 14px;
+    padding: 1rem;
+    margin: 1rem;
+    text-align: justify;
+}
+
+.box5{
+    display:grid ;
+    width: 150px;
+    height: 150px;
+    border: 2px solid black;
+    background-color: aqua;
+    margin: 16px;
+    gap: 14px;
+    padding: 1rem;
+    margin: 1rem;
+    text-align: justify;
+}
+
+.box6{
+    display:grid ;
+    width: 150px;
+    height: 150px;
+    border: 2px solid black;
+    background-color: aqua;
+    margin: 16px;
+    gap: 14px;
+    padding: 1rem;
+    margin: 1rem;
+    text-align: justify;
+}
+
+.box7{
+    display:grid ;
+    width: 150px;
+    height: 150px;
+    border: 2px solid black;
+    background-color: aqua;
+    margin: 16px;
+    gap: 14px;
+    padding: 1rem;
+    margin: 1rem;
+    text-align: justify;
+}
+
+.box8{
+    display:grid ;
+    width: 150px;
+    height: 150px;
+    border: 2px solid black;
+    background-color: aqua;
+    margin: 16px;
+    gap: 14px;
+    padding: 1rem;
+    margin: 1rem;
+    text-align: justify; 
+} 
+
+.box1 {
+    background-color: coral;
+    max-height: 100%;
+    max-width: 25%;
+    border-style: solid;
+    border-radius: 1%;
+    text-align: center;
+    display: grid;
+    grid-template-rows: auto auto;
+    padding: 0.30rem;
+    margin: 0.40rem;
+}
+
+
+footer{
+    background-color: bisque;
+    padding: 1rem;
+    margin: 1rem ;
+    border: 0.1rem solid black;
+}
+
+
+
+intento de grid para poner en filas las imagenes , seguir intentando
+.caja {
+    display: grid;
+    grid-template-columns: repeat(2);
+    gap: 20px;
+    grid-auto-rows: minmax(159px , auto);
+}
+
+.box1 {
+    grid-column: 1 / 3;
+    grid-row: 1;
+} */
+
+clasicos
+#clasicos {
+    background-color: beige;
+    min-height: 100px;
+    margin: 1rem ;
+    padding:  4rem ;
+    border: 0.3rem;
+    margin-top: 1rem;
+    ;
+
+}
+
