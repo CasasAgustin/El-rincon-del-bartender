@@ -1,156 +1,174 @@
- *{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    text-decoration: none;
-    list-style: none;
+ * {
+     padding: 0;
+     margin: 0;
+     box-sizing: border-box;
+     text-decoration: none;
+     list-style: none;
  }
 
  body {
-    background-image: url(./imagen/bartenders-pouring.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: 100% ;
-    padding: 0;
-    margin: 0;
-    display: grid;
-    min-height: auto;
-    min-width: auto;
+     background-image: url(./imagen/bartenders-pouring.jpg);
+     background-repeat: no-repeat;
+     background-size: cover;
+     background-position: 100%;
+     padding: 0;
+     margin: 0;
+     display: grid;
+     min-height: auto;
+     min-width: auto;
  }
 
- main{
-    background-color: aliceblue;
-    padding: 1rem;
-    margin: 1rem;
-    border: 0.1rem solid black;
-    border-radius: 4px;
-    
+ main {
+     background-color: aliceblue;
+     padding: 1rem;
+     margin: 1rem;
+     border: 0.1rem solid black;
+     border-radius: 4px;
+
  }
- 
- 
- 
 
- #headerindex{
-    background-color: aliceblue;
-    max-height: 100px;
-    margin: 1rem ;
-    padding:  1rem ;
-    border: 0.1rem solid black ;
-    border-radius: 5px; 
-    margin-top: 2rem;
-}
 
-h1 {
-    text-align: center ;
-    text-decoration: undrline;
-    color: teal;
-    font-family: 'League Gothic', sans-serif;
-}
 
-.lista {
-    text-align: center;
-    flex-direction: row;
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    list-style: none;
-}
 
-.tarjetacontenedora {
-    width: 100%;
-    display: flex;
-    flex-direction:row ;
-    flex-wrap: nowrap;
-    max-width: 1600px;
-    margin: auto;
-}
+ #headerindex {
+     background-color: aliceblue;
+     max-height: 100px;
+     margin: 1rem;
+     padding: 1rem;
+     border: 0.1rem solid black;
+     border-radius: 5px;
+     margin-top: 2rem;
+ }
 
-.titulotarjeta{
-    width: 100%;
-    max-width: 1080px;
-    margin: auto;
-    padding: 20px;
-    margin-top: 20px;
-    text-align: center ;
-    color: aqua;
-}
+ h1 {
+     text-align: center;
+     text-decoration: undrline;
+     color: teal;
+     font-family: 'League Gothic', sans-serif;
+ }
 
-.tarjeta {
-    width: 30%;
-    margin: 20px;
-    border-radius: 7px;
-    overflow: hidden;
-    background-color: azure;
-    box-shadow: 0px 1px 11px rgba(0,0,0,0.5);
-}
+ .lista {
+     text-align: center;
+     flex-direction: row;
+     display: flex;
+     justify-content: center;
+     gap: 20px;
+     list-style: none;
+ }
 
-.tarjeta:hover{
-    box-shadow: 6px 6px 30px rgba(0,0,0,0.5);
-}
+ .tarjetacontenedora {
+     width: 100%;
+     display: flex;
+     flex-direction: row;
+     flex-wrap: nowrap;
+     max-width: 1600px;
+     margin: auto;
+ }
 
-.tarjeta img{
-    width: 100%;
-    height: 50%;
-}
+ .titulotarjeta {
+     width: 100%;
+     max-width: 1080px;
+     margin: auto;
+     padding: 20px;
+     margin-top: 20px;
+     text-align: center;
+     color: aqua;
+ }
 
-.contenidotarjeta{
-    padding: 15px;
-    text-align: center;
-}
+ .tarjeta {
+     width: 30%;
+     margin: 20px;
+     border-radius: 7px;
+     overflow: hidden;
+     background-color: azure;
+     box-shadow: 0px 1px 11px rgba(0, 0, 0, 0.5);
+ }
 
-.tarjeta .contenidotarjeta{
-    padding: 15px;
-    text-align: center;
-}
+ .tarjeta:hover {
+     box-shadow: 6px 6px 30px rgba(0, 0, 0, 0.5);
+ }
 
-.tarjeta .contenidotarjeta h2{
-    margin-bottom: 5px;
-    color: darkslategrey;
-}
+ .tarjeta img {
+     width: 100%;
+     height: 50%;
+ }
 
-.tarjeta .contenidotarjeta p{
-    line-height: 1.9;
-    color: darkorange;
-    font-size: 20px;
-    margin-bottom: 10px;
-}
+ .contenidotarjeta {
+     padding: 15px;
+     text-align: center;
+ }
 
-.contenidotarjeta a{
-    display: inline-block;
-    padding: 10px;
-    margin-top: 10px;
-    text-decoration: none;
-    color: blueviolet;
-    border: 1px solid black;
-    border-radius: 5px;
-    transition: all 40ms ease;
-    margin-bottom: 4px;
-}
+ .tarjeta .contenidotarjeta {
+     padding: 15px;
+     text-align: center;
+ }
 
-.contenidotarjeta a :hover{
-    background-color: antiquewhite;
-    color: bisque;
-}
+ .tarjeta .contenidotarjeta h2 {
+     margin-bottom: 5px;
+     color: darkslategrey;
+ }
 
-/* pagina de clasicos  */
-.paginaclasica{
-    display: flex;
-    flex-wrap: wrap;
-    min-width: 250px;
-    min-height: 250px;
-}
+ .tarjeta .contenidotarjeta p {
+     line-height: 1.9;
+     color: darkorange;
+     font-size: 20px;
+     margin-bottom: 10px;
+ }
 
-#gridclasicos {
-    display: grid;
+ .contenidotarjeta a {
+     display: inline-block;
+     padding: 10px;
+     margin-top: 10px;
+     text-decoration: none;
+     color: blueviolet;
+     border: 1px solid black;
+     border-radius: 5px;
+     transition: all 40ms ease;
+     margin-bottom: 4px;
+ }
+
+ .contenidotarjeta a :hover {
+     background-color: antiquewhite;
+     color: bisque;
+ }
+
+ /* pagina de clasicos  */
+ .todo {
+     display: grid;
+     grid-template-columns: ();
+     grid-template-rows: ( 1 / 1fr);
+
+
+ }
+
+ .paginaclasica {
+     display: flex;
+     flex-wrap: wrap;
+     min-width: 250px;
+     min-height: 250px;
+ }
+
+ #gridclasicos {
+     display: block;
+ }
+
+ /* display: grid;
     grid-column: auto auto auto; 
     grid-template-rows: auto auto auto;
-    gap: 20px;   
+    gap: 20px;    */
+
+ /* 
+.todo{
+    display: grid;
+    grid-template-columns: ( 3 / 3fr);
+    grid-template-rows: (3 / 1fr);
+    grid-row-start: 1 /  3fr;
 }
 
 #gridclasico .tarjetacontenedora {
     display: grid;
-    grid-column: 1fr;
-    grid-template-rows: auto auto auto;
+    grid-template-columns: auto ;
+    grid-template-rows: max-content ( 3 / 3fr);
     gap: 20px;
 
 }
@@ -164,10 +182,10 @@ h1 {
 }
  .clasicos p{
     font-size: larger;
- }
+ } */
 
  /* modernos */
- .gridtotal{
+ /* .gridtotal{
     width: 100%;
     display: grid;
     grid-template-columns: repeat(4 / 1fr) ;
@@ -176,55 +194,56 @@ h1 {
     footer 
     main main main main
     footer footer footer footer;
- }
+ } */
 
 
  /* footer */
 
-.ulti{
-    background-color: aliceblue;
-    padding: 1rem;
-    margin: 1rem ;
-    border: 0.1rem solid black;
-    border-radius: 4px;
-}
+ .ulti {
+     background-color: aliceblue;
+     padding: 1rem;
+     margin: 1rem;
+     border: 0.1rem solid black;
+     border-radius: 4px;
+ }
 
-.ulti p {
-    font-family: 'League Gothic', sans-serif;
-    font-size: medium;
-}
+ .ulti p {
+     font-family: 'League Gothic', sans-serif;
+     font-size: medium;
+ }
 
-/* pagina de modernos  */
-#headerindexmod{
-    background-color: aliceblue;
-    max-height: 100px;
-    margin: 1rem ;
-    padding:  6rem ;
-    border: 0.1rem solid black ;
-    border-radius: 5px; 
-    margin-top: 2rem;
-}
-
-
-#headerindexmod .tit .parrafoo{
-    text-align: start;
-    block-size: 100%;
-    
-}
-#headerindexmod .tit{
-    margin-top: 11px;
-    margin-bottom: 1px;
-}
+ /* pagina de modernos  */
+ #headerindexmod {
+     background-color: aliceblue;
+     max-height: 100px;
+     margin: 1rem;
+     padding: 6rem;
+     border: 0.1rem solid black;
+     border-radius: 5px;
+     margin-top: 2rem;
+ }
 
 
+ #headerindexmod .tit .parrafoo {
+     text-align: start;
+     block-size: 100%;
+
+ }
+
+ #headerindexmod .tit {
+     margin-top: 11px;
+     margin-bottom: 1px;
+ }
 
 
-/* .cursotitulo{
+
+
+ /* .cursotitulo{
     position: relative;
 } */
 
 
-/* .caja {
+ /* .caja {
     display: grid;
     grid-template-columns: auto auto auto auto;
     margin: 1rem;
@@ -391,15 +410,13 @@ intento de grid para poner en filas las imagenes , seguir intentando
     grid-row: 1;
 } */
 
-clasicos
-#clasicos {
-    background-color: beige;
-    min-height: 100px;
-    margin: 1rem ;
-    padding:  4rem ;
-    border: 0.3rem;
-    margin-top: 1rem;
-    ;
+ clasicos #clasicos {
+     background-color: beige;
+     min-height: 100px;
+     margin: 1rem;
+     padding: 4rem;
+     border: 0.3rem;
+     margin-top: 1rem;
+     ;
 
-}
-
+ }
