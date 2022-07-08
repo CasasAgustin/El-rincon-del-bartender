@@ -136,7 +136,7 @@
  .todo {
      display: grid;
      grid-template-columns: ();
-     grid-template-rows: ( 1 / 1fr);
+     grid-template-rows: (1 / 1fr);
 
 
  }
@@ -225,7 +225,7 @@
 
 
  #headerindexmod .tit .parrafoo {
-     text-align: start;
+     text-align: center;
      block-size: 100%;
 
  }
