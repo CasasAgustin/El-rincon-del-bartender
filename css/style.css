@@ -16,6 +16,30 @@ body {
   min-height: auto;
   min-width: auto; }
 
+.ultisa {
+  display: flex;
+  background-color: aliceblue;
+  padding: 1rem;
+  margin: 1rem;
+  border: 0.1rem solid black;
+  border-radius: 4px;
+  justify-content: space-between; }
+  .ultisa .psinalcohol {
+    display: block;
+    width: 20rem;
+    padding-block: 10px; }
+  .ultisa .cajaredes {
+    display: block;
+    padding-block: 12px;
+    width: 20rem;
+    float: right;
+    text-align: center; }
+  .ultisa .ul {
+    display: flex;
+    list-style-position: inside;
+    padding-top: 1.2rem;
+    justify-content: space-evenly; }
+
 #headerindex {
   background-color: aliceblue;
   max-height: 100px;
