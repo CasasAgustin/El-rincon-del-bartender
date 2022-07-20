@@ -39,6 +39,9 @@ body {
     list-style-position: inside;
     padding-top: 1.2rem;
     justify-content: space-evenly; }
+  .ultisa li:hover {
+    box-shadow: 0px 1px 11px;
+    border-radius: 100%; }
 
 #headerindex {
   background-color: aliceblue;
