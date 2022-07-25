@@ -32,7 +32,7 @@
  //main 
 
  main {
-     background-color:aliceblue;
+     background-color: aliceblue;
      padding: 1rem;
      margin: 1rem;
      border: 0.1rem solid black;
@@ -53,4 +53,21 @@
          text-align: center;
          margin: 10px;
      }
+ }
+
+//  @media (max-width: 375px) {
+//      #headerindex {
+//         // width: fit-content;
+//         // width: 55%;
+//      }
+//      .lista{
+//         text-size-adjust: unset;
+//      }
+//  }
+ 
+ @media (max-width: 708px) {
+    body{
+        background-image: none;
+        background-color:black;
+    }
  }

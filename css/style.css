@@ -81,3 +81,8 @@ main {
   main .imgcenter {
     text-align: center;
     margin: 10px; }
+
+@media (max-width: 708px) {
+  body {
+    background-image: none;
+    background-color: black; } }
