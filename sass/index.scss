@@ -11,6 +11,7 @@
      border: 0.1rem solid black;
      border-radius: 5px;
      margin-top: 2rem;
+     
 
      h1 {
          text-align: center;
@@ -55,19 +56,29 @@
      }
  }
 
-//  @media (max-width: 375px) {
-//      #headerindex {
-//         // width: fit-content;
-//         // width: 55%;
-//      }
-//      .lista{
-//         text-size-adjust: unset;
-//      }
-//  }
- 
- @media (max-width: 708px) {
-    body{
-        background-image: none;
-        background-color:black;
-    }
+ @media (max-width: 375px) {
+     #headerindex {
+          width: fit-content;
+          width: 55%;
+     }
+
+     .lista {
+         text-size-adjust: unset;
+     }
+
+     main{
+        width: 55%;
+
+     }
+
+     footer{
+        width: 55%;
+     }
+ }
+
+ @media (max-width: 425px) {
+     body {
+         background-image: none;
+         background-color: black;
+     }
  }

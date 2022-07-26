@@ -82,7 +82,18 @@ main {
     text-align: center;
     margin: 10px; }
 
-@media (max-width: 708px) {
+@media (max-width: 375px) {
+  #headerindex {
+    width: fit-content;
+    width: 55%; }
+  .lista {
+    text-size-adjust: unset; }
+  main {
+    width: 55%; }
+  footer {
+    width: 55%; } }
+
+@media (max-width: 425px) {
   body {
     background-image: none;
     background-color: black; } }
