@@ -16,7 +16,7 @@ body {
   min-height: auto;
   min-width: auto; }
 
-.ultisa {
+.footer {
   display: flex;
   background-color: aliceblue;
   padding: 1rem;
@@ -24,28 +24,122 @@ body {
   border: 0.1rem solid black;
   border-radius: 4px;
   justify-content: space-between; }
-  .ultisa .psinalcohol {
+  .footer .psinalcohol {
     display: block;
     width: 20rem;
     padding-block: 10px; }
-    .ultisa .psinalcohol p {
+    .footer .psinalcohol p {
       margin-bottom: 1rem; }
-  .ultisa .cajaredes {
+  .footer .cajaredes {
     display: block;
     padding-block: 12px;
     width: 20rem;
     float: right;
     text-align: center; }
-  .ultisa .ul {
+  .footer .ul {
     display: flex;
     list-style-position: inside;
     padding-top: 1.2rem;
     justify-content: space-evenly; }
-  .ultisa li:hover {
+  .footer li:hover {
     box-shadow: 0px 1px 11px;
     border-radius: 100%; }
 
-#headerindex {
+@media (max-width: 320px) {
+  .footer_index {
+    width: 42%;
+    justify-content: space-around; } }
+
+.footer {
+  display: flex;
+  background-color: aliceblue;
+  padding: 1rem;
+  margin: 1rem;
+  border: 0.1rem solid black;
+  border-radius: 4px;
+  justify-content: space-between; }
+  .footer .psinalcohol {
+    display: block;
+    width: 20rem;
+    padding-block: 10px; }
+    .footer .psinalcohol p {
+      margin-bottom: 1rem; }
+  .footer .cajaredes {
+    display: block;
+    padding-block: 12px;
+    width: 20rem;
+    float: right;
+    text-align: center; }
+  .footer .ul {
+    display: flex;
+    list-style-position: inside;
+    padding-top: 1.2rem;
+    justify-content: space-evenly; }
+  .footer li:hover {
+    box-shadow: 0px 1px 11px;
+    border-radius: 100%; }
+
+@media (max-width: 320px) {
+  .footer_index {
+    width: 42%;
+    justify-content: space-around; } }
+
+.clasicos {
+  background-color: aliceblue;
+  max-height: 100px;
+  margin: 1rem;
+  padding: 0.5rem;
+  border: 0.1rem solid black;
+  border-radius: 5px;
+  margin-top: 2rem; }
+
+.gridclasico .tarjetacontenedora {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  width: 100%;
+  max-width: fit-content;
+  margin: auto;
+  padding: 50px; }
+  .gridclasico .tarjetacontenedora .tarjeta {
+    width: 90%;
+    margin: 20px;
+    border-radius: 7px;
+    overflow: hidden;
+    background-color: azure;
+    box-shadow: 0px 1px 11px rgba(0, 0, 0, 0.5); }
+    .gridclasico .tarjetacontenedora .tarjeta:hover {
+      box-shadow: 6px 6px 30px rgba(0, 0, 0, 0.5); }
+    .gridclasico .tarjetacontenedora .tarjeta img {
+      width: 100%;
+      height: 50%; }
+    .gridclasico .tarjetacontenedora .tarjeta .contenidotarjeta {
+      padding: 15px;
+      text-align: center; }
+    .gridclasico .tarjetacontenedora .tarjeta h2 {
+      margin-bottom: 5px;
+      color: darkslategrey; }
+    .gridclasico .tarjetacontenedora .tarjeta p {
+      line-height: 1.9;
+      color: darkorange;
+      font-size: 20px;
+      margin-bottom: 10px; }
+    .gridclasico .tarjetacontenedora .tarjeta a {
+      display: inline-block;
+      padding: 10px;
+      margin-top: 10px;
+      text-decoration: none;
+      color: blueviolet;
+      border: 1px solid black;
+      border-radius: 5px;
+      transition: all 40ms ease;
+      margin-bottom: 4px; }
+      .gridclasico .tarjetacontenedora .tarjeta a:hover {
+        background-color: black;
+        color: bisque; }
+    .gridclasico .tarjetacontenedora .tarjeta .gintonic {
+      height: 33rem; }
+
+.header_index {
   background-color: aliceblue;
   max-height: 100px;
   margin: 1rem;
@@ -53,12 +147,12 @@ body {
   border: 0.1rem solid black;
   border-radius: 5px;
   margin-top: 2rem; }
-  #headerindex h1 {
+  .header_index h1 {
     text-align: center;
     text-decoration: undrline;
     color: teal;
     font-family: 'League Gothic', sans-serif; }
-  #headerindex .lista {
+  .header_index .lista {
     text-align: center;
     flex-direction: row;
     display: flex;
@@ -82,18 +176,23 @@ main {
     text-align: center;
     margin: 10px; }
 
-@media (max-width: 375px) {
-  #headerindex {
-    width: fit-content;
-    width: 55%; }
-  .lista {
-    text-size-adjust: unset; }
-  main {
-    width: 55%; }
-  footer {
-    width: 55%; } }
+@media (max-width: 320px) {
+  .header_index {
+    display: flex;
+    width: 42%; }
+    .header_index h1 {
+      text-align: justify;
+      font-size: x-large; }
+    .header_index .lista {
+      text-align: justify;
+      display: none; } }
 
-@media (max-width: 425px) {
+@media (max-width: 320px) {
+  .main_index {
+    max-width: 42%;
+    text-size-adjust: 100%; } }
+
+@media (max-width: 320px) {
   body {
     background-image: none;
     background-color: black; } }

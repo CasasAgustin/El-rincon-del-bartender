@@ -1,4 +1,4 @@
-.ultisa {
+.footer {
     display: flex;
     background-color: aliceblue;
     padding: 1rem;
@@ -11,8 +11,8 @@
         display: block;
         width: 20rem;
         padding-block: 10px;
-         
-        p{
+
+        p {
             margin-bottom: 1rem;
         }
     }
@@ -32,9 +32,16 @@
         justify-content: space-evenly;
     }
 
-    li:hover{   
+    li:hover {
         box-shadow: 0px 1px 11px;
         border-radius: 100%;
 
+    }
+}
+
+@media (max-width: 320px) {
+    .footer_index {
+        width: 42%;
+        justify-content: space-around;
     }
 }

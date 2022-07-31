@@ -1,9 +1,10 @@
  @import 'global';
  @import 'footer';
+ @import 'clasicos';
 
  // header
 
- #headerindex {
+ .header_index {    
      background-color: aliceblue;
      max-height: 100px;
      margin: 1rem;
@@ -11,7 +12,7 @@
      border: 0.1rem solid black;
      border-radius: 5px;
      margin-top: 2rem;
-     
+
 
      h1 {
          text-align: center;
@@ -56,29 +57,35 @@
      }
  }
 
- @media (max-width: 375px) {
-     #headerindex {
-          width: fit-content;
-          width: 55%;
-     }
+ @media (max-width: 320px) {
+     .header_index {
+         display: flex;
+         width: 42%;
 
-     .lista {
-         text-size-adjust: unset;
-     }
+         h1 {   
+             text-align: justify;
+             font-size: x-large;
+         }
 
-     main{
-        width: 55%;
-
-     }
-
-     footer{
-        width: 55%;
+         .lista {
+             text-align: justify;
+             display: none;
+         }
      }
  }
 
- @media (max-width: 425px) {
+ @media (max-width: 320px) {
+     .main_index {
+         max-width: 42%;
+         text-size-adjust: 100%;
+     }
+ }
+
+ @media (max-width: 320px) {
      body {
          background-image: none;
          background-color: black;
      }
  }
+
+
