@@ -139,6 +139,157 @@ body {
     .gridclasico .tarjetacontenedora .tarjeta .gintonic {
       height: 33rem; }
 
+.footer {
+  display: flex;
+  background-color: aliceblue;
+  padding: 1rem;
+  margin: 1rem;
+  border: 0.1rem solid black;
+  border-radius: 4px;
+  justify-content: space-between; }
+  .footer .psinalcohol {
+    display: block;
+    width: 20rem;
+    padding-block: 10px; }
+    .footer .psinalcohol p {
+      margin-bottom: 1rem; }
+  .footer .cajaredes {
+    display: block;
+    padding-block: 12px;
+    width: 20rem;
+    float: right;
+    text-align: center; }
+  .footer .ul {
+    display: flex;
+    list-style-position: inside;
+    padding-top: 1.2rem;
+    justify-content: space-evenly; }
+  .footer li:hover {
+    box-shadow: 0px 1px 11px;
+    border-radius: 100%; }
+
+@media (max-width: 320px) {
+  .footer_index {
+    width: 42%;
+    justify-content: space-around; } }
+
+.header_moderno {
+  background-color: aliceblue;
+  max-height: 100px;
+  margin: 1rem;
+  padding: 1rem;
+  border: 0.1rem solid black;
+  border-radius: 5px;
+  margin-top: 2rem; }
+  .header_moderno h1 {
+    text-align: center;
+    text-decoration: undrline;
+    color: teal;
+    font-family: 'League Gothic', sans-serif; }
+  .header_moderno .listamod {
+    text-align: center;
+    flex-direction: row;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    list-style: none;
+    text-decoration: none; }
+    .header_moderno .listamod .ul li {
+      color: black; }
+
+.moderno h1 {
+  text-align: center; }
+
+.tarjetacontenedora {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  width: 100%;
+  max-width: fit-content;
+  margin: auto;
+  padding: 50px; }
+  .tarjetacontenedora .tarjeta {
+    width: 90%;
+    margin: 20px;
+    border-radius: 7px;
+    overflow: hidden;
+    background-color: azure;
+    box-shadow: 0px 1px 11px rgba(0, 0, 0, 0.5); }
+    .tarjetacontenedora .tarjeta:hover {
+      box-shadow: 6px 6px 30px rgba(0, 0, 0, 0.5); }
+    .tarjetacontenedora .tarjeta .caipirinha {
+      height: 340px; }
+    .tarjetacontenedora .tarjeta img {
+      width: 100%;
+      height: 50%; }
+    .tarjetacontenedora .tarjeta .contenidotarjeta {
+      padding: 15px;
+      text-align: center; }
+
+.mainmod {
+  display: grid;
+  grid-template-rows: auto; }
+  .mainmod .moderno {
+    display: block;
+    position: relative;
+    height: 200px; }
+
+.footer {
+  display: flex;
+  background-color: aliceblue;
+  padding: 1rem;
+  margin: 1rem;
+  border: 0.1rem solid black;
+  border-radius: 4px;
+  justify-content: space-between; }
+  .footer .psinalcohol {
+    display: block;
+    width: 20rem;
+    padding-block: 10px; }
+    .footer .psinalcohol p {
+      margin-bottom: 1rem; }
+  .footer .cajaredes {
+    display: block;
+    padding-block: 12px;
+    width: 20rem;
+    float: right;
+    text-align: center; }
+  .footer .ul {
+    display: flex;
+    list-style-position: inside;
+    padding-top: 1.2rem;
+    justify-content: space-evenly; }
+  .footer li:hover {
+    box-shadow: 0px 1px 11px;
+    border-radius: 100%; }
+
+@media (max-width: 320px) {
+  .footer_index {
+    width: 42%;
+    justify-content: space-around; } }
+
+.header_contacto {
+  background-color: aliceblue;
+  max-height: 100px;
+  margin: 1rem;
+  padding: 1rem;
+  border: 0.1rem solid black;
+  border-radius: 5px;
+  margin-top: 2rem; }
+  .header_contacto h1 {
+    text-align: center;
+    text-decoration: none;
+    color: teal;
+    font-family: 'League Gothic', sans-serif; }
+  .header_contacto .lista_contacto {
+    text-align: center;
+    flex-direction: row;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    list-style: none; }
+    .header_contacto .lista_contacto .ul li {
+      color: black; }
+
 .header_index {
   background-color: aliceblue;
   max-height: 100px;
@@ -149,7 +300,6 @@ body {
   margin-top: 2rem; }
   .header_index h1 {
     text-align: center;
-    text-decoration: undrline;
     color: teal;
     font-family: 'League Gothic', sans-serif; }
   .header_index .lista {
@@ -158,7 +308,8 @@ body {
     display: flex;
     justify-content: center;
     gap: 20px;
-    list-style: none; }
+    list-style: none;
+    color: black; }
 
 main {
   background-color: aliceblue;

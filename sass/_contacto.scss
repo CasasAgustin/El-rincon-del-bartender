@@ -1,0 +1,33 @@
+@import'footer';
+
+.header_contacto {
+    background-color: aliceblue;
+    max-height: 100px;
+    margin: 1rem;
+    padding: 1rem;
+    border: 0.1rem solid black;
+    border-radius: 5px;
+    margin-top: 2rem;
+
+    h1 {
+        text-align: center;
+        text-decoration: none;
+        color: teal;
+        font-family: 'League Gothic', sans-serif;
+    }
+
+    .lista_contacto {
+        text-align: center;
+        flex-direction: row;
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+        list-style: none;
+        text-decoration: none;
+
+        .ul li {
+            color: black;
+        }
+
+    }
+}
