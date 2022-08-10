@@ -23,6 +23,7 @@
      }
 
      .lista {
+        text-decoration: none;
          text-align: center;
          flex-direction: row;
          display: flex;
@@ -76,6 +77,8 @@
      }
  }
 
+
+ 
  @media (max-width: 320px) {
      .main_index {
          max-width: 42%;

@@ -102,6 +102,7 @@ body {
   padding: 50px; }
   .gridclasico .tarjetacontenedora .tarjeta {
     width: 90%;
+    height: max-content;
     margin: 20px;
     border-radius: 7px;
     overflow: hidden;
@@ -111,9 +112,9 @@ body {
       box-shadow: 6px 6px 30px rgba(0, 0, 0, 0.5); }
     .gridclasico .tarjetacontenedora .tarjeta img {
       width: 100%;
-      height: 50%; }
+      height: 100%; }
     .gridclasico .tarjetacontenedora .tarjeta .contenidotarjeta {
-      padding: 15px;
+      padding: 1px;
       text-align: center; }
     .gridclasico .tarjetacontenedora .tarjeta h2 {
       margin-bottom: 5px;
@@ -137,7 +138,12 @@ body {
         background-color: black;
         color: bisque; }
     .gridclasico .tarjetacontenedora .tarjeta .gintonic {
-      height: 33rem; }
+      height: 16rem; }
+
+@media screen and (max-width: 320px) {
+  .tarjetacontenedora {
+    display: flex;
+    flex-direction: column; } }
 
 .footer {
   display: flex;
@@ -183,55 +189,76 @@ body {
   margin-top: 2rem; }
   .header_moderno h1 {
     text-align: center;
-    text-decoration: undrline;
+    text-decoration: none;
     color: teal;
     font-family: 'League Gothic', sans-serif; }
   .header_moderno .listamod {
+    text-decoration: none;
     text-align: center;
     flex-direction: row;
     display: flex;
     justify-content: center;
     gap: 20px;
-    list-style: none;
-    text-decoration: none; }
+    list-style: none; }
     .header_moderno .listamod .ul li {
       color: black; }
 
-.moderno h1 {
-  text-align: center; }
-
 .tarjetacontenedora {
   display: grid;
-  grid-template-columns: auto auto auto;
+  grid-template-columns: repeat(3, 1fr);
   width: 100%;
   max-width: fit-content;
   margin: auto;
   padding: 50px; }
-  .tarjetacontenedora .tarjeta {
+  .tarjetacontenedora .tarjeta_modernos {
+    height: 500px;
     width: 90%;
-    margin: 20px;
-    border-radius: 7px;
+    margin: 2px;
+    border-radius: 5px;
     overflow: hidden;
     background-color: azure;
     box-shadow: 0px 1px 11px rgba(0, 0, 0, 0.5); }
-    .tarjetacontenedora .tarjeta:hover {
+    .tarjetacontenedora .tarjeta_modernos:hover {
       box-shadow: 6px 6px 30px rgba(0, 0, 0, 0.5); }
-    .tarjetacontenedora .tarjeta .caipirinha {
-      height: 340px; }
-    .tarjetacontenedora .tarjeta img {
-      width: 100%;
-      height: 50%; }
-    .tarjetacontenedora .tarjeta .contenidotarjeta {
-      padding: 15px;
-      text-align: center; }
+  .tarjetacontenedora .contenidotarjeta {
+    padding: 5px;
+    text-align: center; }
 
-.mainmod {
-  display: grid;
-  grid-template-rows: auto; }
-  .mainmod .moderno {
-    display: block;
-    position: relative;
-    height: 200px; }
+.moderno {
+  margin-bottom: 40px; }
+  .moderno h1 {
+    text-align: center; }
+
+@media screen and (max-width: 320px) {
+  .listamod {
+    visibility: hidden; }
+  .tarjetacontenedora {
+    display: grid;
+    grid-template-columns: 1fr;
+    border-radius: 5px;
+    margin: 5px;
+    padding: 10px;
+    gap: 30px;
+    text-align: center; }
+    .tarjetacontenedora .contenidotarjeta {
+      position: fixed;
+      display: contents; }
+  .tarjeta_modernos .martini {
+    height: 210px; }
+  .tarjeta_modernos .caipirinha {
+    height: 210px; }
+  .tarjeta_modernos img {
+    width: 100%;
+    height: 260px; }
+  .header_moderno {
+    width: 44%;
+    margin: 3px; }
+  .mainmod {
+    width: 44%;
+    margin: 3px; }
+  .footer {
+    width: 44%;
+    margin: 1px; } }
 
 .footer {
   display: flex;
@@ -286,7 +313,8 @@ body {
     display: flex;
     justify-content: center;
     gap: 20px;
-    list-style: none; }
+    list-style: none;
+    text-decoration: none; }
     .header_contacto .lista_contacto .ul li {
       color: black; }
 
@@ -303,6 +331,7 @@ body {
     color: teal;
     font-family: 'League Gothic', sans-serif; }
   .header_index .lista {
+    text-decoration: none;
     text-align: center;
     flex-direction: row;
     display: flex;
