@@ -204,7 +204,7 @@ body {
 .tarjetacontenedora {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  width: 100%;
+  width: 100vw;
   max-width: fit-content;
   margin: auto;
   padding: 50px; }
