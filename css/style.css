@@ -45,11 +45,6 @@ body {
     box-shadow: 0px 1px 11px;
     border-radius: 100%; }
 
-@media (max-width: 320px) {
-  .footer_index {
-    width: 42%;
-    justify-content: space-around; } }
-
 .footer {
   display: flex;
   background-color: aliceblue;
@@ -79,11 +74,6 @@ body {
     box-shadow: 0px 1px 11px;
     border-radius: 100%; }
 
-@media (max-width: 320px) {
-  .footer_index {
-    width: 42%;
-    justify-content: space-around; } }
-
 .clasicos {
   background-color: aliceblue;
   max-height: 100px;
@@ -93,16 +83,23 @@ body {
   border-radius: 5px;
   margin-top: 2rem; }
 
+.gridclasico .todo {
+  background-color: aliceblue;
+  padding: 1rem;
+  margin: 1rem;
+  border: 0.1rem solid black;
+  border-radius: 7px; }
+
 .gridclasico .tarjetacontenedora {
   display: grid;
   grid-template-columns: auto auto auto;
-  width: 100%;
+  width: 100vw;
   max-width: fit-content;
   margin: auto;
   padding: 50px; }
   .gridclasico .tarjetacontenedora .tarjeta {
-    width: 90%;
-    height: max-content;
+    width: 25vw;
+    height: auto;
     margin: 20px;
     border-radius: 7px;
     overflow: hidden;
@@ -113,6 +110,8 @@ body {
     .gridclasico .tarjetacontenedora .tarjeta img {
       width: 100%;
       height: 100%; }
+    .gridclasico .tarjetacontenedora .tarjeta .gintonic {
+      height: 1200px; }
     .gridclasico .tarjetacontenedora .tarjeta .contenidotarjeta {
       padding: 1px;
       text-align: center; }
@@ -123,7 +122,7 @@ body {
       line-height: 1.9;
       color: darkorange;
       font-size: 20px;
-      margin-bottom: 10px; }
+      margin-bottom: 0px; }
     .gridclasico .tarjetacontenedora .tarjeta a {
       display: inline-block;
       padding: 10px;
@@ -140,11 +139,6 @@ body {
     .gridclasico .tarjetacontenedora .tarjeta .gintonic {
       height: 16rem; }
 
-@media screen and (max-width: 320px) {
-  .tarjetacontenedora {
-    display: flex;
-    flex-direction: column; } }
-
 .footer {
   display: flex;
   background-color: aliceblue;
@@ -174,10 +168,14 @@ body {
     box-shadow: 0px 1px 11px;
     border-radius: 100%; }
 
-@media (max-width: 320px) {
-  .footer_index {
-    width: 42%;
-    justify-content: space-around; } }
+.mainmod {
+  background-color: aliceblue;
+  max-height: fit-content;
+  margin: 1rem;
+  padding: 0.5rem;
+  border: 0.1rem solid black;
+  border-radius: 7px;
+  margin-top: 2px; }
 
 .header_moderno {
   background-color: aliceblue;
@@ -220,9 +218,19 @@ body {
     box-shadow: 0px 1px 11px rgba(0, 0, 0, 0.5); }
     .tarjetacontenedora .tarjeta_modernos:hover {
       box-shadow: 6px 6px 30px rgba(0, 0, 0, 0.5); }
-  .tarjetacontenedora .contenidotarjeta {
-    padding: 5px;
-    text-align: center; }
+    .tarjetacontenedora .tarjeta_modernos .maracuya {
+      width: 100%;
+      height: 260px; }
+    .tarjetacontenedora .tarjeta_modernos .caipirinha {
+      width: 100%;
+      height: 100%; }
+    .tarjetacontenedora .tarjeta_modernos .gimlet {
+      width: 100%;
+      height: 260px; }
+
+.contenidotarjeta {
+  padding: 5px;
+  text-align: center; }
 
 .moderno {
   margin-bottom: 40px; }
@@ -230,6 +238,8 @@ body {
     text-align: center; }
 
 @media screen and (max-width: 320px) {
+  .gridtotal {
+    width: 100vw; }
   .listamod {
     visibility: hidden; }
   .tarjetacontenedora {
@@ -251,14 +261,71 @@ body {
     width: 100%;
     height: 260px; }
   .header_moderno {
-    width: 44%;
-    margin: 3px; }
+    width: 100vw;
+    margin: 0; }
   .mainmod {
-    width: 44%;
-    margin: 3px; }
-  .footer {
-    width: 44%;
-    margin: 1px; } }
+    width: 100vw;
+    margin: 0; } }
+
+@media screen and (max-width: 376px) {
+  .gridtotal {
+    width: 100vw; }
+  .listamod {
+    visibility: hidden; }
+  .tarjetacontenedora {
+    display: grid;
+    grid-template-columns: 1fr;
+    border-radius: 5px;
+    margin: 5px;
+    padding: 10px;
+    gap: 30px;
+    text-align: center; }
+    .tarjetacontenedora .contenidotarjeta {
+      position: fixed;
+      display: contents; }
+  .tarjeta_modernos .martini {
+    height: 210px; }
+  .tarjeta_modernos .caipirinha {
+    height: 210px; }
+  .tarjeta_modernos img {
+    width: 100%;
+    height: 260px; }
+  .header_moderno {
+    width: 100vw;
+    margin: 0; }
+  .mainmod {
+    width: 100vw;
+    margin: 0; } }
+
+@media screen and (max-width: 426px) {
+  .gridtotal {
+    width: 100vw; }
+  .listamod {
+    visibility: hidden; }
+  .tarjetacontenedora {
+    display: grid;
+    grid-template-columns: 1fr;
+    border-radius: 5px;
+    margin: 5px;
+    padding: 10px;
+    gap: 30px;
+    text-align: center; }
+    .tarjetacontenedora .contenidotarjeta {
+      position: fixed;
+      display: contents; }
+  .tarjeta_modernos .martini {
+    height: 210px; }
+  .tarjeta_modernos .caipirinha {
+    height: 210px; }
+  .tarjeta_modernos img {
+    width: 100%;
+    height: 260px; }
+  .header_moderno {
+    width: 100vw;
+    margin: 0; }
+  .mainmod {
+    width: 100vw;
+    margin: 0; } }
 
 .footer {
   display: flex;
@@ -289,18 +356,22 @@ body {
     box-shadow: 0px 1px 11px;
     border-radius: 100%; }
 
-@media (max-width: 320px) {
-  .footer_index {
-    width: 42%;
-    justify-content: space-around; } }
+.contacto_main {
+  background-color: aliceblue;
+  max-height: fit-content;
+  margin: 1rem;
+  padding: 0.5rem;
+  border: 0.1rem solid black;
+  border-radius: 7px;
+  margin-top: 2px; }
 
 .header_contacto {
   background-color: aliceblue;
   max-height: 100px;
   margin: 1rem;
-  padding: 1rem;
+  padding: 0.5rem;
   border: 0.1rem solid black;
-  border-radius: 5px;
+  border-radius: 7px;
   margin-top: 2rem; }
   .header_contacto h1 {
     text-align: center;
@@ -340,39 +411,31 @@ body {
     list-style: none;
     color: black; }
 
-main {
+.main_index {
   background-color: aliceblue;
   padding: 1rem;
   margin: 1rem;
   border: 0.1rem solid black;
   border-radius: 4px; }
-  main h2 {
+  .main_index h2 {
     text-align: center;
     font-size: xx-large;
     margin: 30px; }
-  main .parrafos {
+  .main_index .parrafos {
     margin: 14px; }
-  main .imgcenter {
+  .main_index .imgcenter {
     text-align: center;
     margin: 10px; }
 
-@media (max-width: 320px) {
+@media screen and (max-width: 320px) {
   .header_index {
-    display: flex;
-    width: 42%; }
-    .header_index h1 {
-      text-align: justify;
-      font-size: x-large; }
+    width: 100vw;
+    margin: 0; }
     .header_index .lista {
-      text-align: justify;
-      display: none; } }
-
-@media (max-width: 320px) {
+      visibility: hidden; }
   .main_index {
-    max-width: 42%;
-    text-size-adjust: 100%; } }
-
-@media (max-width: 320px) {
-  body {
-    background-image: none;
-    background-color: black; } }
+    max-width: 100vw;
+    margin: 0; }
+    .main_index img {
+      width: 75vw;
+      justify-items: center; } }

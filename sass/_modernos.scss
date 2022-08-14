@@ -1,5 +1,15 @@
 @import'footer';
 
+.mainmod {
+
+    background-color: aliceblue;
+    max-height: fit-content;
+    margin: 1rem;
+    padding: 0.5rem;
+    border: 0.1rem solid black;
+    border-radius: 7px;
+    margin-top: 2px;
+}
 
 .header_moderno {
     background-color: aliceblue;
@@ -54,6 +64,21 @@
             box-shadow: 6px 6px 30px rgba(0, 0, 0, 0.5);
         }
 
+            .maracuya {
+                width: 100%;
+                height: 260px;
+            }
+
+            .caipirinha {
+                width: 100%;
+                height: 100%;
+            }
+
+            .gimlet {
+                width: 100%;
+                height: 260px;
+            }
+        }
     }
 
     .contenidotarjeta {
@@ -61,7 +86,7 @@
         text-align: center;
     }
 
-}
+
 
 .moderno {
     margin-bottom: 40px;
@@ -73,8 +98,11 @@
 
 @media screen and (max-width: 320px) {
 
-   
-    .listamod{
+    .gridtotal{
+        width: 100vw;
+    }
+
+    .listamod {
         visibility: hidden;
     }
 
@@ -109,79 +137,119 @@
     }
 
     .header_moderno {
-        width: 44%;
-        margin: 3px;
+        width: 100vw;
+        margin: 0;
     }
 
     .mainmod {
-        width: 44%;
-        margin: 3px;
-    }
-
-    .footer {
-        width: 44%;
-        margin: 1px;
+        width: 100vw;
+        margin: 0;
     }
 }
 
-// @media (max-width: 320px) {
+@media screen and (max-width: 376px){
+    
+    .gridtotal{
+        width: 100vw;
+    }
 
-//     .gridtotal {
-//         display: flex;
-//         flex-direction: column;
-//         background-color: black;
-//     }
+    .listamod {
+        visibility: hidden;
+    }
 
+    .tarjetacontenedora {
+        display: grid;
+        grid-template-columns: 1fr;
+        border-radius: 5px;
+        margin: 5px;
+        padding: 10px;
+        gap: 30px;
+        text-align: center;
 
-//     .header_moderno {
-//         display: flex;
-//         flex-direction: column;
-//         width: 79%;
+        .contenidotarjeta {
+            position: fixed;
+            display: contents;
+        }
+    }
 
-//         h1 {
-//             text-align: justify;
-//             font-size: x-large;
-//         }
+    .tarjeta_modernos {
+        .martini {
+            height: 210px;
+        }
 
-//         .listamod {
-//             text-align: justify;
-//             display: none;
-//         }
-//     }
+        .caipirinha {
+            height: 210px;
+        }
 
+        img {
+            width: 100%;
+            height: 260px;
+        }
+    }
 
+    .header_moderno {
+        width: 100vw;
+        margin: 0;
+    }
 
+    .mainmod {
+        width: 100vw;
+        margin: 0;
+    }
 
-//     .mainmod {
-//         max-width: 79%;
-//         text-size-adjust: 100%;
+    
 
-//     }
+    
+}
 
+@media screen and (max-width: 426px) {
 
+    .gridtotal{
+        width: 100vw;
+    }
 
-//     .tarjetacontenedora {
-//         display: flex;
-//         flex-direction: column;
-//         border-radius: 5px;
-//         margin: 5px;
-//         padding: 10px;
-//         gap: 30px;
+    .listamod {
+        visibility: hidden;
+    }
 
-//         img {
-//             width: 100%;
-//             height: 280px;
-//         }
+    .tarjetacontenedora {
+        display: grid;
+        grid-template-columns: 1fr;
+        border-radius: 5px;
+        margin: 5px;
+        padding: 10px;
+        gap: 30px;
+        text-align: center;
 
-//         .contenidotarjeta {
-//             text-align: center;
-//         }
-//     }
-// }
+        .contenidotarjeta {
+            position: fixed;
+            display: contents;
+        }
+    }
 
+    .tarjeta_modernos {
+        .martini {
+            height: 210px;
+        }
 
-// .footer {
-//     display: flex;
-//     flex-direction: column;
-//     width: 79%;
-// }
+        .caipirinha {
+            height: 210px;
+        }
+
+        img {
+            width: 100%;
+            height: 260px;
+        }
+    }
+
+    .header_moderno {
+        width: 100vw;
+        margin: 0;
+    }
+
+    .mainmod {
+        width: 100vw;
+        margin: 0;
+    }
+    
+}
